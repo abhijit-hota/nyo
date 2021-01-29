@@ -1,0 +1,16 @@
+{
+  "name": "spiral-matrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "determinant.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "3.15.0",
+    "eslint": "7.18.0"
+  }
+}
