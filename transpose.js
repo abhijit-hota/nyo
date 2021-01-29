@@ -1,13 +1,14 @@
 /**
+ * Get the transpose of a matrix
  * 
- * @param {[][]} mat 
- * @returns {[][]}
+ * @param {number[[]]} mat 
+ * @returns {number[[]]}
  */
-function makeTranspose(mat) {
+function getTranspose(mat) {
 	const column = mat[0];
 	return column.map((_, i) => {
 		return mat.map((row) => row[i]);
 	});
 }
 
-module.exports = makeTranspose;
+module.exports = getTranspose;

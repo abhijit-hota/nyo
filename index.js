@@ -1,5 +1,5 @@
 const { mat } = require("./inputs.js");
-const makeTranspose = require("./transpose.js");
+const getTranspose = require("./transpose.js");
 const getDeterminant = require("./determinant");
 const multiplyScalar = require("./scalar-multiplication.js");
 const composeMatrix = (nRows = 3, nCols = 3, filler = 1) => Array(nRows).fill(Array(nCols).fill(filler));
@@ -36,15 +36,8 @@ class Matrix {
 	get isInvertable() {
 		return this.determinant !== 0;
 	}
-
-	transpose() {
-		const mat = this.matrix;
-		const column = mat[0];
-		return new Matrix(
-			column.map((_, i) => {
-				return mat.map((row) => row[i]);
-			})
-		);
+	get transpose() {
+		return new Matrix(getTranspose(this.matrix));
 	}
 	multiplyScalar(scalar) {
 		return new Matrix(multiplyScalar(this.matrix, scalar));
@@ -56,7 +49,8 @@ const mat2 = new Matrix([
 	[1, 2, 3],
 	[3, 4, 5],
 ]);
-console.log(mat1.matrix);
+console.log(mat2.order);
+console.log(mat2.transpose.order);
 // console.log(mat2.determinant);
 console.log(mat2.multiplyScalar(2));
 // console.log(mat1.trace);
