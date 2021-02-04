@@ -59,6 +59,6 @@ module.exports = {
 	columnMatrix,
 	zeroMatrix,
 	identityMatrix,
-	// strings,
+	strings,
 	notSquare,
 };

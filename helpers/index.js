@@ -1,7 +1,5 @@
-const i = require("./isNonZero.js");
-
-module.exports = {
-	getDifferenceBetween: require("./getDifferenceBetween"),
-	getScalarProduct: require("./getScalarProduct"),
-	isNonZero: require("./isNonZero"),
-};
+export * from "./isNonZero.js";
+export * from "./isNumberMatrix.js";
+export * from "./getScalarProduct.js";
+export * from "./getDifferenceBetween.js";
+export * from "./composeMatrix.js";

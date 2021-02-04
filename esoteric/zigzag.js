@@ -1,4 +1,4 @@
-const { mat, mat2, mat3, mat4, mat5 } = require("./inputs");
+const { mat, mat2, mat3, mat4, mat5 } = require("../tests/inputs");
 
 const zigzag = (mat_in) => {
     // Copy the matrix and convert to string. 

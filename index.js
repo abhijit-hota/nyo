@@ -1,8 +1,8 @@
-const { mat } = require("./inputs.js");
-const getTranspose = require("./transpose.js");
-const getDeterminant = require("./determinant");
-const multiplyScalar = require("./scalar-multiplication.js");
-const composeMatrix = (nRows = 3, nCols = 3, filler = 1) => Array(nRows).fill(Array(nCols).fill(filler));
+import getTranspose from "./lib/transpose.js";
+import getDeterminant from "./lib/determinant.js";
+import multiplyScalar from "./lib/scalar-multiplication.js";
+import multiplyMatrices from "./lib/multiplication.js";
+import composeMatrix from "./helpers/index.js";
 
 class Matrix {
 	constructor({ nRows, nCols, filler } = {}) {
@@ -42,17 +42,12 @@ class Matrix {
 	multiplyScalar(scalar) {
 		return new Matrix(multiplyScalar(this.matrix, scalar));
 	}
+	multiply(...matrices) {
+		return multiplyMatrices([this.matrix, ...matrices]);
+	}
 }
 
-const mat1 = new Matrix(mat);
-const mat2 = new Matrix([
-	[1, 2, 3],
-	[3, 4, 5],
-]);
-console.log(mat2.order);
-console.log(mat2.transpose.order);
-// console.log(mat2.determinant);
-console.log(mat2.multiplyScalar(2));
-// console.log(mat1.trace);
-// console.log(mat1.isSquareMatrix);
-// console.log(mat1.isInvertable);
+export default Matrix;
+
+module.exports = Matrix;
+module.exports.default = Matrix;

@@ -2,10 +2,7 @@
 	"env": {
 		"commonjs": true,
 		"node": true,
-		"es6": true,
-	},
-	"ecmaFeatures": {
-		"modules": true
+		"es6": true
 	},
 	// "extends": ["airbnb-base"],
 	"parserOptions": {
@@ -13,7 +10,8 @@
 		"sourceType": "module"
 	},
 	"rules": {
-        "no-undef": "warn",
+		"no-undef": "error",
+		"no-unused-vars": "warn",
 		"no-tabs": "off",
 		"no-console": "off",
 		"comma-dangle": [

@@ -1,16 +1,18 @@
 {
-  "name": "spiral-matrix",
-  "version": "1.0.0",
-  "description": "",
-  "main": "determinant.js",
-  "scripts": {
-    "test": "ava"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "ava": "3.15.0",
-    "eslint": "7.18.0"
-  }
+	"name": "neo.js",
+	"type": "module",
+	"version": "0.5.0",
+	"description": "A matrix library for JavaScript with ability to calculate determinants, transpose, inverse, RREF and other simple matrix operations",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint .",
+		"test": "ava"
+	},
+	"keywords": [],
+	"author": "Abhijit Hota",
+	"license": "MIT",
+	"devDependencies": {
+		"ava": "3.15.0",
+		"eslint": "7.19.0"
+	}
 }

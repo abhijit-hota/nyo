@@ -1,4 +1,4 @@
-const { mat, mat2, mat3, mat4 } = require("./inputs");
+const { mat, mat2, mat3, mat4 } = require("../tests/inputs");
 
 const unspiral = (mat_in) => {
     let outputArr = [];
