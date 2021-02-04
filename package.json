@@ -9,16 +9,23 @@
 	},
 	"keywords": [
 		"matrix",
+		"operations",
 		"rref",
 		"determinant",
 		"inverse",
+		"transpose",
 		"browser",
 		"node"
 	],
 	"author": "Abhijit Hota <abhihota025@gmail.com>",
 	"license": "MIT",
 	"repository": {
-
+		"type": "git",
+		"url": "https://github.com/abhijit-hota/nyo.git"
+	},
+	"bugs": {
+		"url": "https://github.com/abhijit-hota/nyo/issues",
+		"email": "abhihota025@gmail.com"
 	},
 	"directories": {
 		"lib": "lib",
