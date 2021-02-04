@@ -1,6 +1,6 @@
 # Nyo
 
-## A Matrix Library for JavaaScript
+## A Matrix Library for JavaScript
 
 ### Features
 
@@ -13,9 +13,13 @@
 
 ### Todos
 
-[] Stable API
-[] Fix error handling at some places
-[] Tests
-[] Bundle it for browsers
-[] Set-up CI
-[] Add Docs
+- Code
+  - [ ] Stable API
+  - [ ] Fix error handling at some places
+  - [ ] Features: `print`, `concat`, `slice`, `replace`, etc.
+  - [ ] Make a separate `SquareMatrix` class inherited from `Matrix` class
+  - [ ] Tests
+- Misc
+  - [ ] Add Docs (!)
+  - [ ] Bundle it for browsers
+  - [ ] Set-up CI
