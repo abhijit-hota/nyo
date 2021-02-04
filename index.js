@@ -2,6 +2,7 @@ const getTranspose = require("./lib/transpose");
 const getDeterminant = require("./lib/determinant");
 const multiplyScalar = require("./lib/scalar-multiplication");
 const multiplyMatrices = require("./lib/multiplication");
+const getInverse = require("./lib/inverse");
 const { composeMatrix } = require("./helpers");
 
 class Matrix {
@@ -35,6 +36,15 @@ class Matrix {
 	}
 	get isInvertable() {
 		return this.determinant !== 0;
+	}
+	get inverse() {
+		if (this.determinant === 0) {
+			throw new Error("Cannot find inverse of non invertible matrix");
+		} else if (!this.isSquareMatrix) {
+			throw new Error("Inverse is only defined for square matrices");
+		} else {
+			return new Matrix(getInverse(this.matrix));
+		}
 	}
 	get transpose() {
 		return new Matrix(getTranspose(this.matrix));
