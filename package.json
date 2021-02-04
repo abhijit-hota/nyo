@@ -1,6 +1,6 @@
 {
-	"name": "neo.js",
-	"version": "0.5.0",
+	"name": "nyo",
+	"version": "0.6.0",
 	"description": "A matrix library for JavaScript with ability to calculate determinants, transpose, inverse, RREF and other simple matrix operations",
 	"main": "index.js",
 	"scripts": {
@@ -17,6 +17,9 @@
 	],
 	"author": "Abhijit Hota <abhihota025@gmail.com>",
 	"license": "MIT",
+	"repository": {
+
+	},
 	"directories": {
 		"lib": "lib",
 		"test": "tests"
