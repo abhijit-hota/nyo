@@ -1,7 +1,7 @@
 const test = require("ava");
 const { mat, mat2, strings, notSquare, identityMatrix, zeroMatrix } = require("./inputs");
 
-const getDeterminant = require("../determinant");
+const getDeterminant = require("../lib/determinant");
 
 test("determinant", (t) => {
 	t.is(getDeterminant(mat), -3596);
