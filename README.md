@@ -2,6 +2,12 @@
 
 ## A Matrix Library for JavaScript
 
+Currently, only supports CommonJS syntax.
+
+### Install
+
+To be published
+
 ### Features
 
 - Addition
