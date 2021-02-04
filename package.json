@@ -1,6 +1,6 @@
 {
 	"name": "nyo",
-	"version": "0.6.0",
+	"version": "0.7.0",
 	"description": "A matrix library for JavaScript with ability to calculate determinants, transpose, inverse, RREF and other simple matrix operations",
 	"main": "index.js",
 	"scripts": {
