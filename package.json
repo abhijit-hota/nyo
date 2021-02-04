@@ -7,9 +7,20 @@
 		"lint": "eslint .",
 		"test": "ava"
 	},
-	"keywords": [],
-	"author": "Abhijit Hota",
+	"keywords": [
+		"matrix",
+		"rref",
+		"determinant",
+		"inverse",
+		"browser",
+		"node"
+	],
+	"author": "Abhijit Hota <abhihota025@gmail.com>",
 	"license": "MIT",
+	"directories": {
+		"lib": "lib",
+		"test": "tests"
+	},
 	"devDependencies": {
 		"ava": "3.15.0",
 		"eslint": "7.19.0"

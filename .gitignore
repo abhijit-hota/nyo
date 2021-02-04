@@ -1,1 +1,9 @@
 node_modules
+
+# development
+publish-test
+*.tgz
+
+# lockfiles
+yarn.lock
+package-lock.json
