@@ -1,2 +1,2 @@
 const isNonZero = (entry) => entry !== 0;
-export default isNonZero;
+module.exports = isNonZero;

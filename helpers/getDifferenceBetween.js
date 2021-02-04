@@ -4,4 +4,4 @@ const getDifferenceBetween = (arr1, arr2) => {
 	}
 	return arr1.map((val, index) => val - arr2[index]);
 };
-export default getDifferenceBetween;
+module.exports = getDifferenceBetween;

@@ -1,8 +1,8 @@
-import getTranspose from "./lib/transpose.js";
-import getDeterminant from "./lib/determinant.js";
-import multiplyScalar from "./lib/scalar-multiplication.js";
-import multiplyMatrices from "./lib/multiplication.js";
-import composeMatrix from "./helpers/index.js";
+const getTranspose = require("./lib/transpose");
+const getDeterminant = require("./lib/determinant");
+const multiplyScalar = require("./lib/scalar-multiplication");
+const multiplyMatrices = require("./lib/multiplication");
+const { composeMatrix } = require("./helpers");
 
 class Matrix {
 	constructor({ nRows, nCols, filler } = {}) {
@@ -46,8 +46,6 @@ class Matrix {
 		return multiplyMatrices([this.matrix, ...matrices]);
 	}
 }
-
-export default Matrix;
 
 module.exports = Matrix;
 module.exports.default = Matrix;
