@@ -42,8 +42,9 @@ class Matrix {
 	multiplyScalar(scalar) {
 		return new Matrix(multiplyScalar(this.matrix, scalar));
 	}
-	multiply(...matrices) {
-		return multiplyMatrices([this.matrix, ...matrices]);
+	multiply(...matrixInstances) {
+		const matrices = matrixInstances.map((matrixInstance) => matrixInstance.matrix);
+		return new Matrix(multiplyMatrices(this.matrix, ...matrices));
 	}
 }
 
