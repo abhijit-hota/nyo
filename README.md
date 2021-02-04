@@ -6,7 +6,11 @@ Currently, only supports CommonJS syntax.
 
 ### Install
 
-To be published
+`npm i nyo`
+
+or
+
+`yarn add nyo`
 
 ### Features
 
